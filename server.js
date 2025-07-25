@@ -13,7 +13,7 @@ app.get('/events', async (req, res) => {
       'https://www.eventbriteapi.com/v3/events/search/?location.address=united+states&start_date.range_start=2025-08-01T00:00:00Z&start_date.range_end=2025-08-31T23:59:59Z',
       {
         headers: {
-          Authorization: `Bearer ${process.env.EVENTBRITE_TOKEN}`,
+          Authorization: `Bearer ${process.env.TOKEN}`,
         }
       }
     );
